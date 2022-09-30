@@ -8,32 +8,31 @@
 
 #include <iostream>
 
-class PIDController{
+class PIDController {
 
 private:
-    int kp, ki, kd;
+  int kp, ki, kd;
 
 public:
-    /**
-     * @brief 
-     * 
-     * @param setPoint
-     * @param actualVelocity
-     * 
-     * @return postion as 
-     */
+  /**
+   * @brief
+   *
+   * @param setPoint
+   * @param actualVelocity
+   *
+   * @return postion as
+   */
 
-    float computeVelocity(float setPoint, float actualVelocity){
-        float newVelocity = 10;
-        return newVelocity;
-    }
+  float computeVelocity(float setPoint, float actualVelocity) {
+    float newVelocity = 10;
+    return newVelocity;
+  }
 };
 
-int main()
-{
-    PIDController controller;
+int main() {
+  PIDController controller;
 
-    float newVelocity = controller.computeVelocity(5, 15);
-    std::cout<<newVelocity;
-    return 0;
+  float newVelocity = controller.computeVelocity(5, 15);
+  std::cout << newVelocity;
+  return 0;
 }
