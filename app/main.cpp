@@ -14,7 +14,7 @@
 using namespace std;
 int main() {
   PIDController controller;
-  controller.setParameters(0.1, 0.5, 0.01, 0.1);
+  controller.setParameters(0.1, 0.5, 0.01);
   float newVelocity = controller.computeVelocity(5, 15);
   std::cout << newVelocity;
   return 0;

@@ -17,7 +17,10 @@ class PIDController {
 
 private:
   // Initializing kp, ki, kd constants to zero
-  double kp, ki, kd, dt = 0.0;
+  double kp, ki, kd = 0.0;
+
+  // Initializing time sample
+  double dt = 0.1;
 
 public:
   /**
@@ -26,23 +29,21 @@ public:
    * @param kp proportional constant
    * @param ki proportional constant
    * @param kd proportional constant
-   * @param dt time constant
    */
-  void setParameters(double kp, double ki, double kd, double dt) {
+  void setParameters(double kp, double ki, double kd) {
     kp = kp;
     ki = ki;
     kd = kd;
-    dt = dt;
   }
   /**
    * @brief computing new velocity using PID controller
    *
    * @param setPoint
    * @param actualVelocity
-   * @return float
+   * @return double
    */
-  float computeVelocity(float setPoint, float actualVelocity) {
-    float newVelocity = 10;
+  double computeVelocity(float setPoint, float actualVelocity) {
+    double newVelocity = 10;
     return newVelocity;
   }
 };
