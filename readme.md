@@ -3,6 +3,11 @@
 [![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
 ---
 
+## Authors' details:
+```
+Driver :    Guru Nandhan A D P (GitHub  : guruadp)
+Navigator   : Shail Kiritkumar Shah (GitHub  : sshah115)
+```
 ## Overview
 
 Simple starter C++ project with:
