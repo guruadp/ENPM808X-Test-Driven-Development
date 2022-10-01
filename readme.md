@@ -3,21 +3,23 @@
 [![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
 ---
 
-## Authors' details:
+## Authors:
 ```
-Driver :    Guru Nandhan A D P (GitHub  : guruadp)
+Driver      : Guru Nandhan A D P  (GitHub  : guruadp)
 Navigator   : Shail Kiritkumar Shah (GitHub  : sshah115)
 ```
 ## Overview
 
-Simple starter C++ project with:
-
-- cmake
-- googletest
-
+> It is a [PID Controller](https://en.wikipedia.org/wiki/PID_controller) implementation for a new mobile robot product development.
+>
+> The implementation is divided in two phases as follows:
+>
+> 1) Phase 1: The deisgn for implementation is devised and test suite is formulated.
+> 
+> 2) Phase 2: Implementation is prepared and test suite is performed to verify.
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/guruadp/ENPM808X-Test-Driven-Development
 cd <path to repository>
 mkdir build
 cd build
