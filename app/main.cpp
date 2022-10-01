@@ -7,31 +7,13 @@
  */
 
 #include <iostream>
+#include "../include/PIDController.hpp"
 
-class PIDController {
 
-private:
-  int kp, ki, kd;
-
-public:
-  /**
-   * @brief
-   *
-   * @param setPoint
-   * @param actualVelocity
-   *
-   * @return postion as
-   */
-
-  float computeVelocity(float setPoint, float actualVelocity) {
-    float newVelocity = 10;
-    return newVelocity;
-  }
-};
-
+using namespace std;
 int main() {
   PIDController controller;
-
+  controller.setParameters(0.1, 0.5, 0.01, 0.1);
   float newVelocity = controller.computeVelocity(5, 15);
   std::cout << newVelocity;
   return 0;
