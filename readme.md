@@ -5,7 +5,7 @@
 
 ## Authors:
 ```
-Driver      : Guru Nandhan A D P  (GitHub  : guruadp)
+Driver      : Guru Nandhan A D P    (GitHub  : guruadp)
 Navigator   : Shail Kiritkumar Shah (GitHub  : sshah115)
 ```
 ## Overview
