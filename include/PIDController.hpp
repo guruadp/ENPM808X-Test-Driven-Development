@@ -8,8 +8,8 @@
  *  @date 2022-10-01
  */
 
-#ifndef PIDCONTROLLER_HPP
-#define PIDCONTROLLER_HPP
+#ifndef INCLUDE_PIDCONTROLLER_HPP_
+#define INCLUDE_PIDCONTROLLER_HPP_
 
 #include <iostream>
 
@@ -22,6 +22,10 @@ private:
   // Initializing time sample
   double dt = 0.1;
 
+  double err = 0.0;
+
+  double err_pre = 0.0;
+
 public:
   /**
    * @brief Set the Parameters
@@ -30,11 +34,7 @@ public:
    * @param ki proportional constant
    * @param kd proportional constant
    */
-  void setParameters(double kp, double ki, double kd) {
-    kp = kp;
-    ki = ki;
-    kd = kd;
-  }
+  void setParameters(double kp, double ki, double kd);
   /**
    * @brief computing new velocity using PID controller
    *
@@ -42,10 +42,7 @@ public:
    * @param actualVelocity
    * @return double
    */
-  double computeVelocity(float setPoint, float actualVelocity) {
-    double newVelocity = 10;
-    return newVelocity;
-  }
+  double computeVelocity(double setPoint, double actualVelocity); 
 };
 
 #endif

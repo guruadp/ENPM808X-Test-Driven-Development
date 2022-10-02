@@ -9,5 +9,15 @@
  */
 
 #include <gtest/gtest.h>
+#include "../app/PIDController.cpp"
 
-TEST(dummy, should_pass) { EXPECT_EQ(1, 1); }
+TEST(testPIDController, should_pass) { 
+  PIDController controller;
+  EXPECT_EQ(controller.computeVelocity(5, 10), -4); 
+}
+
+TEST(testPIDController1, should_pass) { 
+  PIDController controller;
+  EXPECT_EQ(controller.computeVelocity(3, 9), -3); 
+}
+

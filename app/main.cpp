@@ -8,7 +8,7 @@
  *  @date 2022-10-01
  */
 
-#include "../include/PIDController.hpp"
+#include "PIDController.cpp"
 #include <iostream>
 
 using namespace std;
