@@ -17,7 +17,7 @@ class PIDController {
 
 private:
   // Initializing kp, ki, kd constants to zero
-  double kp, ki, kd = 0.0;
+  double kp = 0.0, ki = 0.0, kd = 0.0;
 
   // Initializing time sample
   double dt = 0.1; 

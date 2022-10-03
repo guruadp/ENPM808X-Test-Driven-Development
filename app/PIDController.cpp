@@ -4,9 +4,9 @@
 PIDController::PIDController(double kp, double ki, double kd) {
 
   // kp, ki and kd are proportional constants
-  kp = kp;
-  ki = ki;
-  kd = kd;
+  double _kp = kp;
+  double _ki = ki;
+  double _kd = kd;
 }
 
 double PIDController::computeVelocity(double setPoint, double actualVelocity) {
