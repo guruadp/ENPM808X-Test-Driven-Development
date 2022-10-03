@@ -8,14 +8,15 @@
  *  @date 2022-10-01
  */
 
-#include "PIDController.cpp"
+#include <PIDController.hpp>
 #include <iostream>
 
 using namespace std;
 int main() {
-  PIDController controller;
-  controller.setParameters(0.1, 0.5, 0.01);
-  float newVelocity = controller.computeVelocity(5, 15);
-  std::cout << newVelocity;
+  PIDController controller(0.1, 0.5, 0.01);
+  double velocity = 0;
+  for (int i=0; i<50; i++){
+    double newVelocity = controller.computeVelocity(velocity, 0);
+  }
   return 0;
 }

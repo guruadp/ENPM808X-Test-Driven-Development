@@ -23,18 +23,11 @@ private:
   double dt = 0.1;
 
   double err = 0.0;
-
   double err_pre = 0.0;
 
 public:
-  /**
-   * @brief Set the Parameters
-   *
-   * @param kp proportional constant
-   * @param ki proportional constant
-   * @param kd proportional constant
-   */
-  void setParameters(double kp, double ki, double kd);
+
+  PIDController(double kp, double ki, double kd);
   /**
    * @brief computing new velocity using PID controller
    *
