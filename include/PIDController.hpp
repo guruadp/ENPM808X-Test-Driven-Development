@@ -20,10 +20,9 @@ private:
   double kp = 0.0, ki = 0.0, kd = 0.0;
 
   // Initializing time sample
-  double dt = 0.1; 
+  double dt = 0.1;
 
 public:
-
   PIDController(double kp, double ki, double kd);
   /**
    * @brief computing new velocity using PID controller
@@ -32,7 +31,7 @@ public:
    * @param actualVelocity
    * @return double
    */
-  double computeVelocity(double setPoint, double actualVelocity); 
+  double computeVelocity(double setPoint, double actualVelocity);
 };
 
 #endif

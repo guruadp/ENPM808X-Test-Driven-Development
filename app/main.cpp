@@ -16,8 +16,9 @@ int main() {
   PIDController controller(0.1, 0.5, 0.01);
   double setpointVelocity = 10;
   double actualVelocity = 0;
-  for (int i=0; i<50; i++){
-    double newVelocity = controller.computeVelocity(setpointVelocity, actualVelocity);
+  for (int i = 0; i < 50; i++) {
+    double newVelocity =
+        controller.computeVelocity(setpointVelocity, actualVelocity);
   }
   return 0;
 }

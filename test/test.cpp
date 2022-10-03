@@ -8,16 +8,15 @@
  *  @date 2022-10-01
  */
 
-#include <gtest/gtest.h>
 #include "../include/PIDController.hpp"
+#include <gtest/gtest.h>
 
-TEST(testPIDController, should_pass) { 
+TEST(testPIDController, should_pass) {
   PIDController controller(0.1, 0.01, 0.1);
-  EXPECT_EQ(controller.computeVelocity(5.0, 10.0), 1); 
+  EXPECT_EQ(controller.computeVelocity(5.0, 10.0), 1);
 }
 
-TEST(testPIDController1, should_pass) { 
+TEST(testPIDController1, should_pass) {
   PIDController controller(0.01, 0.1, 0.1);
-  EXPECT_EQ(controller.computeVelocity(3.0, 9.0), 13); 
+  EXPECT_EQ(controller.computeVelocity(3.0, 9.0), 13);
 }
-
