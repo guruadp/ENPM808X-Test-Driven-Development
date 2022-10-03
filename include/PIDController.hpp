@@ -20,10 +20,7 @@ private:
   double kp, ki, kd = 0.0;
 
   // Initializing time sample
-  double dt = 0.1;
-
-  double err = 0.0;
-  double err_pre = 0.0;
+  double dt = 0.1; 
 
 public:
 
