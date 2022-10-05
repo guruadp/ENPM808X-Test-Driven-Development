@@ -3,7 +3,8 @@
  *  @file    PIDController.hpp
  *  @author  Guru Nandhan A D P (guruadp@umd.edu) (Driver) and Shail Kiritkumar
  * Shah (sshah115@umd.edu) (Navigator)
- *  @brief Functions are defined in this file
+ *  @brief This file contains the initialization of variables and methods saved
+ *  as header file
  *  @version 0.1
  *  @date 2022-10-01
  */
@@ -20,7 +21,7 @@ private:
   double kp = 0.0, ki = 0.0, kd = 0.0;
 
   // Initializing time sample
-  double dt = 0.1;
+  double dt = 0.1, err_pre = 0.0, err_sum = 0.0;
 
 public:
   // Constructor that assigns Kp, Ki and Kd proportional
