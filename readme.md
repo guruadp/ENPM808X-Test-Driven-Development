@@ -39,6 +39,9 @@ We made some changes in the test cases since the compute method runs for only on
 - Check code linting: Phase 2 team
 - Check code coverage: Phase 2 team
 
+## UML class diagram
+
+!["UML Class Diagram"](./UML_Class_Diagram.png)
 ## Standard install via command-line
 ```
 git clone --recursive https://github.com/guruadp/ENPM808X-Test-Driven-Development
