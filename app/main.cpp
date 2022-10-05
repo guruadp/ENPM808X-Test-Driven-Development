@@ -27,7 +27,7 @@ int main() {
         controller.computeVelocity(setpointVelocity, actualVelocity);
     std::cout << "Actual Velocity: " << actualVelocity << "   "
               << "New Velocity : " << newVelocity << std::endl;
-    actualVelocity += newVelocity;
+    actualVelocity = newVelocity;
   }
 
   return 0;

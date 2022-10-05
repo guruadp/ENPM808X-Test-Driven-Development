@@ -12,11 +12,11 @@
 #include "../include/PIDController.hpp"
 
 TEST(testPIDController, should_pass) {
-  PIDController controller(0.1, 0.01, 0.1);
-  EXPECT_EQ(controller.computeVelocity(5.0, 10.0), 1);
+  PIDController controller(0.1, 0.1, 0.01);
+  EXPECT_NEAR(controller.computeVelocity(5.0, 10.0), 10, 0.5);
 }
 
 TEST(testPIDController1, should_pass) {
-  PIDController controller(0.01, 0.1, 0.1);
-  EXPECT_EQ(controller.computeVelocity(3.0, 9.0), 13);
+  PIDController controller(0.1, 0.15, 0.01);
+  EXPECT_NEAR(controller.computeVelocity(3.0, 9.0), 9, 0.5);
 }
