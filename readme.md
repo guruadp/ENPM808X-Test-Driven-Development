@@ -4,9 +4,15 @@
 ---
 
 ## Authors:
+### Phase 1
 ```
 Driver      : Guru Nandhan A D P    (GitHub  : guruadp)
 Navigator   : Shail Kiritkumar Shah (GitHub  : sshah115)
+```
+### Phase 2
+```
+Driver      : Arshad Shaik      (GitHub  : Arshad-Engineer)
+Navigator   : Manu Madhu Pillai (GitHub  : lilnpuma)
 ```
 ## Overview
 
@@ -17,6 +23,17 @@ Navigator   : Shail Kiritkumar Shah (GitHub  : sshah115)
 > 1) Phase 1: The deisgn for implementation is devised and test suite is formulated.
 > 
 > 2) Phase 2: Implementation is prepared and test suite is performed to verify.
+
+## To do list
+- Add implementation for methods of PID Controller Class: Phase 2 team
+- Update UML Diragram: Phase 1 team
+- Check if tests pass: Phase 2 team
+- Add sum of error variable in PID controller Class: Phase 1 Team
+- Check code linting: Phase 2 team
+- Check code coverage: Phase 2 team
+
+## Tasks Done
+
 ## Standard install via command-line
 ```
 git clone --recursive https://github.com/guruadp/ENPM808X-Test-Driven-Development
