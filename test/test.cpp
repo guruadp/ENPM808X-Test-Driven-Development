@@ -13,10 +13,10 @@
 
 TEST(testPIDController, should_pass) {
   PIDController controller(0.1, 0.01, 0.1);
-  EXPECT_EQ(controller.computeVelocity(5.0, 10.0), 5);
+  EXPECT_EQ(controller.computeVelocity(5.0, 10.0), 1);
 }
 
 TEST(testPIDController1, should_pass) {
   PIDController controller(0.01, 0.1, 0.1);
-  EXPECT_EQ(controller.computeVelocity(3.0, 9.0), 5);
+  EXPECT_EQ(controller.computeVelocity(3.0, 9.0), 13);
 }
