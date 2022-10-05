@@ -13,10 +13,10 @@
 
 TEST(testPIDController, should_pass) {
   PIDController controller(0.1, 0.1, 0.01);
-  EXPECT_NEAR(controller.computeVelocity(5.0, 10.0), 10, 0.5);
+  EXPECT_NEAR(controller.computeVelocity(10, 12), 10, 0.5);
 }
 
 TEST(testPIDController1, should_pass) {
   PIDController controller(0.1, 0.15, 0.01);
-  EXPECT_NEAR(controller.computeVelocity(3.0, 9.0), 9, 0.5);
+  EXPECT_NEAR(controller.computeVelocity(3.0, 4.5), 4.5, 0.5);
 }
