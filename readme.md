@@ -26,13 +26,13 @@ Navigator   : Manu Madhu Pillai (GitHub  : lilnpuma)
 
 ## To do list
 - Add implementation for methods of PID Controller Class: Phase 2 team
-- Update UML Diragram: Phase 1 team
 - Check if tests pass: Phase 2 team
-- Add sum of error variable in PID controller Class: Phase 1 Team
 - Check code linting: Phase 2 team
 - Check code coverage: Phase 2 team
 
 ## Tasks Done
+- Update UML Diragram: Phase 1 team
+- Add sum of error variable in PID controller Class: Phase 1 Team
 
 ## Standard install via command-line
 ```
