@@ -9,10 +9,9 @@
  *  @date 2022-10-01
  */
 
-#include "../include/PIDController.hpp"
 #include <iostream>
+#include "../include/PIDController.hpp"
 
-using namespace std;
 int main() {
   PIDController controller(0.1, 0.01, 0.5);
   double setpointVelocity = 0;

@@ -15,29 +15,28 @@
 #include <iostream>
 
 class PIDController {
-
-private:
+ private:
   // Initializing kp, ki, kd constants to zero
   double kp = 0.0, ki = 0.0, kd = 0.0;
 
   // Initializing time sample
   double dt = 0.1, err_pre = 0.0, err_sum = 0.0;
 
-public:
-  // Constructor that assigns Kp, Ki and Kd proportional
-  PIDController(double kp, double ki, double kd);
+ public:
+    // Constructor that assigns Kp, Ki and Kd proportional
+    PIDController(double kp, double ki, double kd);
 
-  //Destructor 
-  ~PIDController();
+    // Destructor
+    ~PIDController();
 
-  /**
-   * @brief computing new velocity using PID controller
-   *
-   * @param setPoint
-   * @param actualVelocity
-   * @return double
-   */
-  double computeVelocity(double setPoint, double actualVelocity);
+    /**
+     * @brief computing new velocity using PID controller
+     *
+     * @param setPoint
+     * @param actualVelocity
+     * @return double
+     */
+    double computeVelocity(double setPoint, double actualVelocity);
 };
 
-#endif
+#endif  // INCLUDE_PIDCONTROLLER_HPP_
