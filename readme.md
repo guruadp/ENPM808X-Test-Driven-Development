@@ -24,15 +24,20 @@ Navigator   : Manu Madhu Pillai (GitHub  : lilnpuma)
 > 
 > 2) Phase 2: Implementation is prepared and test suite is performed to verify.
 
+## Notes
+
+We made some changes in the test cases since the compute method runs for only one iteration and changed EXCEPT_EQ to EXCEPT_NEAR to accomodate the slight variation.
+
 ## To do list
-- Add implementation for methods of PID Controller Class: Phase 2 team
-- Check if tests pass: Phase 2 team
-- Check code linting: Phase 2 team
-- Check code coverage: Phase 2 team
+
 
 ## Tasks Done
 - Update UML Diragram: Phase 1 team
 - Add sum of error variable in PID controller Class: Phase 1 Team
+- Add implementation for methods of PID Controller Class: Phase 2 team
+- Check if tests pass: Phase 2 team
+- Check code linting: Phase 2 team
+- Check code coverage: Phase 2 team
 
 ## Standard install via command-line
 ```
