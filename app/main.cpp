@@ -3,7 +3,8 @@
  *  @file    main.cpp
  *  @author  Guru Nandhan A D P (guruadp@umd.edu) (Driver) and Shail Kiritkumar
  * Shah (sshah115@umd.edu) (Navigator)
- *  @brief PID controller for Test Driven Development
+ *  @brief Interface for inputting user defined velocity inputs and printing-
+ *  output in the form of new velocity by calling its function.
  *  @version 0.1
  *  @date 2022-10-01
  */
@@ -17,18 +18,18 @@ int main() {
   double setpointVelocity = 0;
   double actualVelocity = 0;
 
-  std::cout<<"Enter the actual velocity: "<<std::endl;
-  std::cin>>actualVelocity;
-  std::cout<<"Enter the desired velocity"<<std::endl;
-  std::cin>>setpointVelocity;
+  std::cout << "Enter the actual velocity: " << std::endl;
+  std::cin >> actualVelocity;
+  std::cout << "Enter the desired velocity" << std::endl;
+  std::cin >> setpointVelocity;
 
   for (int i = 0; i < 10; i++) {
     double newVelocity =
         controller.computeVelocity(setpointVelocity, actualVelocity);
-    std::cout << "Actual : " << actualVelocity<< "   "
+    std::cout << "Actual Velocity: " << actualVelocity << "   "
               << "New Velocity : " << newVelocity << std::endl;
     actualVelocity += newVelocity;
   }
-  
+
   return 0;
 }

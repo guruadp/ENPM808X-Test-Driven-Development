@@ -3,7 +3,7 @@
  *  @file    PIDController.hpp
  *  @author  Guru Nandhan A D P (guruadp@umd.edu) (Driver) and Shail Kiritkumar
  * Shah (sshah115@umd.edu) (Navigator)
- *  @brief PID controller for Test Driven Development
+ *  @brief Functions are defined in this file
  *  @version 0.1
  *  @date 2022-10-01
  */
@@ -23,7 +23,12 @@ private:
   double dt = 0.1;
 
 public:
+  // Constructor that assigns Kp, Ki and Kd proportional
   PIDController(double kp, double ki, double kd);
+
+  //Destructor 
+  ~PIDController();
+
   /**
    * @brief computing new velocity using PID controller
    *
