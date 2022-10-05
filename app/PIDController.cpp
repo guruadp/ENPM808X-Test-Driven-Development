@@ -11,9 +11,9 @@
 
 #include "../include/PIDController.hpp"
 
-PIDController::PIDController(double kp, double ki, double kd) {
+PIDController::PIDController(double kp, double ki, double kd) {}
 
-}
+PIDController::~PIDController(){}
 
 double PIDController::computeVelocity(double setPoint, double actualVelocity) {
   double output = 5;
