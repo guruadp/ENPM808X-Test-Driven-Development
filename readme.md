@@ -1,4 +1,4 @@
-# C++ Boilerplate
+# Test Driven Development | Team 9
 [![Build Status](https://app.travis-ci.com/guruadp/ENPM808X-Test-Driven-Development.svg?branch=master)](https://app.travis-ci.com/guruadp/ENPM808X-Test-Driven-Development)
 [![Coverage Status](https://coveralls.io/repos/github/guruadp/ENPM808X-Test-Driven-Development/badge.svg?branch=master)](https://coveralls.io/github/guruadp/ENPM808X-Test-Driven-Development?branch=master)
 ---
@@ -46,7 +46,7 @@ In your Eclipse workspace directory (or create a new one), checkout the repo (an
 ```
 mkdir -p ~/workspace
 cd ~/workspace
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/guruadp/ENPM808X-Test-Driven-Development
 ```
 
 In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of cpp-boilerplate
