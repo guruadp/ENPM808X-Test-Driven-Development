@@ -13,7 +13,7 @@
 #include "../include/PIDController.hpp"
 
 int main() {
-  PIDController controller(0.1, 0.01, 0.5);
+  PIDController controller(0.1, 0.5, 0.01);
   double setpointVelocity = 0;
   double actualVelocity = 0;
 
